@@ -8,3 +8,80 @@
 body {
     margin: 0px;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background: linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(145,145,145,1) 85%, rgba(146,146,146,1) 85.5%, rgba(147,147,147,1) 86%, rgba(148,148,148,1) 86.5%, 
+    rgba(149,149,149,1) 87%, rgba(151,151,151,1) 87.5%, rgba(152,152,152,1) 88%, rgba(153,153,153,1) 88.5%, rgba(154,154,154,1) 89%, rgba(155,155,155,1) 89.5%, 
+    rgba(160,160,160,1) 90%, rgba(169,169,169,1) 95%, rgba(170,170,170,1) 100%);
+    height: 105px;
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:900px;
+    height:105;
+    position:relative;
+}
+
+.change-to-english {
+    color: white;
+    font-size: 12px;
+    margin: 15px
+}
+
+.search-the-web {
+    align-self:flex-end;
+    margin: 20px 0px 0px 30px;
+
+}
+
+button {
+    padding: 0px;
+    width: 19px;
+}
+
+input {
+    border-top-right-radius: 5px;
+    border: solid 1px #AAAAAA;
+    width:130px;
+    height: 20px;
+}
+
+input::placeholder {
+    color:black;
+    font-size: 12px;
+}
+
+ul {
+    display: flex;
+    margin-top:25px;
+    padding-right: 130px;      
+}
+
+li {
+    list-style: none;
+    margin: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 15px
+}
+
+.nav-vertical-bar {
+    color: #AAAAAA;
+    
+}
+
+.magnifying-glass {
+    position:absolute;
+}
+
+.paz-logo {
+    position: absolute;
+    top: 30px;
+    right:-8px;
+}
+
