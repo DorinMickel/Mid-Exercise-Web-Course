@@ -23,7 +23,7 @@ function submitContactUs() {
 }
 
 
-var changeImage = setInterval(changeImage,10000);
+var changeImage = setInterval(changeImage,8000);
 
 function changeImage() {
     var image = document.getElementById('changingImage').src;
@@ -39,7 +39,7 @@ function changeImage() {
     }
 }
 
-var changeHeadline = setInterval(changeHeadline,10000);
+var changeHeadline = setInterval(changeHeadline,8000);
 
 function changeHeadline() {
     var headline = document.getElementById('changingHeadline').innerHTML;
@@ -51,6 +51,7 @@ function changeHeadline() {
         document.getElementById('changingHeadline').innerHTML = "yellow click&pick";
         
     } else {
-        document.getElementById('changingHeadline').h4 = "שטחי מסחר פז סנטר";
+        document.getElementById('changingHeadline').innerHTML = "שטחי מסחר פז סנטר";
     }
+    
 }
