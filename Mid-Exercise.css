@@ -298,6 +298,8 @@ footer {
 
 footer > div {
     width : 900px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .footer-menu {
@@ -336,12 +338,12 @@ footer ul {
 
 /* Contact  us page design */
 
-main {
+.contact-us-main {
     display: flex;
     justify-content: center;
 }
 
-main > div {
+.contact-us-main > div {
     display:flex;
     width: 900px;
     padding-top: 32px;
