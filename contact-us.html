@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Mid-Exercise.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="Mid-Exercise.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
 
             <nav>
                 <ul>
-                    <li class="header-menu"><div><a href="#"><img src="menu_home_grey.png" alt="Home"></a></div></li>
+                    <li class="header-menu"><div><a href="Mid-Exercise.html"><img src="menu_home_grey.png" alt="Home"></a></div></li>
                     <li class="header-menu"><div><a href="#">אודות</a></div>
                         <ul>
                             <li><a href="#">אודות</a></li>
@@ -83,7 +84,7 @@
             </nav>
         
             <div class="paz-logo-container">
-                <img class="paz-logo" src="paz_logo.png" alt="Paz Logo">
+                <a href="Mid-Exercise.html"><img class="paz-logo" src="paz_logo.png" alt="Paz Logo"></a>
             </div>
         </div> 
     </header>
@@ -105,25 +106,30 @@
                     <form>
                         <div>
                             <label for="fName">* שם פרטי</label>
-                            <input id="fName" type="text">
+                            <input id="fName" required type="text">                            
                         </div>
+                        <div class="required-error" id="requiredErrorFName"><span>שדה חובה</span></div>
                         <div>
                             <label for="lName">* שם משפחה</label>
-                            <input id="lName" type="text">
+                            <input id="lName" required type="text">                            
                         </div>
+                        <div class="required-error" id="requiredErrorLName"><span>שדה חובה</span></div>
                         <div>
                             <label for="phoneNumber">* טלפון</label>
-                            <input id="phoneNumber" type="text">
+                            <input id="phoneNumber" required type="text">                            
                         </div>
+                        <div class="required-error" id="requiredErrorPhoneNumber"><span>שדה חובה</span></div>
                         <div>
                             <label for="email">* E-mail</label>
-                            <input id="email" type="email">
+                            <input id="email" required type="email">                            
                         </div>
+                        <div class="required-error" id="requiredErrorEmail"><span>שדה חובה</span></div>
+                        <div class="email-error" id="emailError"><span>קלט לא מתאים</span></div>
                         <div>
                             <textarea name="notes" id="free" cols="20" rows="3" placeholder="תוכן הפנייה"></textarea>
                         </div>
                         <div>
-                            <button class="send-form-btn" type="button"><a href="#">שלח</a></button>
+                            <button class="send-form-btn" type="button" onclick="submitContactUs()"><a href="#">שלח</a></button>
                         </div>
 
                     </form>
@@ -167,7 +173,7 @@
         <div>
             <ul>
                 <li class="footer-menu"><div><a href="#"><img src="fb_icon.png" alt="Facebook icon"></a></div></li>
-                <li class="footer-menu"><div><a href="#">עמוד הבית</a></div></li>
+                <li class="footer-menu"><div><a href="Mid-Exercise.html">עמוד הבית</a></div></li>
                 <li class="footer-menu"><div><a href="#">מחירונים</a></div></li>
                 <li class="footer-menu"><div><a href="#">קריירה</a></div></li>
                 <li class="footer-menu"><div><a href="#">תנאי שימוש</a></div></li>
@@ -180,5 +186,6 @@
 
         </div>
     </footer>
+    
 </body>
 </html>

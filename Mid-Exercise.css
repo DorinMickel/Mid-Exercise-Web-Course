@@ -5,6 +5,8 @@
     text-align: right;
 }
 
+/* home page design */
+
 body {
     margin: 0px;
 }
@@ -15,6 +17,8 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+/*header of home page */
 
 header {
     display: flex;
@@ -150,6 +154,8 @@ nav > ul {
     right:-8px;
 }
 
+/* ** main section of homw page ** */
+
 .main-images-container {
     width:900px;
     display: flex;
@@ -195,7 +201,7 @@ nav > ul {
 
 .read-more {
     text-decoration: underline;
-
+    position: relative;
 }
 
 .read-more > div {
@@ -206,7 +212,7 @@ nav > ul {
     color:white;
 }
 
-.read-more a:hover, .more-detailes > a:hover , .country-regions > a:hover {
+.read-more a:hover, .more-detailes > a:hover , .country-regions > a:hover  {
     color: #005CA0;     
 }
 
@@ -280,9 +286,11 @@ hr {
 }
 
 
-.more-detailes > a >img, .country-regions > a > img {
+.more-detailes > a > img, .country-regions > a > img {
     margin-right:5px;
 }
+
+/* ** footer of home page ** */
 
 footer {
     display: flex;
@@ -336,7 +344,7 @@ footer ul {
     color: #005CA0;
 }
 
-/* Contact  us page design */
+/* ** Contact  us page design ** */
 
 .contact-us-main {
     display: flex;
@@ -373,7 +381,11 @@ footer ul {
 .contact-us-btn > a {
     color: #5C5C5C;
     text-decoration: none;
-    margin-right: 13px
+    margin-right: 13px;
+    display:block;
+    width:88%;
+    height: 100%;
+    padding-top: 10px;
 }
 
 .contact-us-btn:hover > a {
@@ -418,7 +430,6 @@ h3 {
 
 .form-container {
     width: 385px;
-    height: 357px;
     color: #6d6d6d;
     background: linear-gradient(180deg, rgb(255,255,255), rgb(236,236,236));
     border-top-right-radius: 20px;
@@ -428,7 +439,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 18px;
-    margin-top: 10px
+    margin-top: 13px
 
 }
 
@@ -449,6 +460,7 @@ form {
     flex-direction: column;
     align-self: center;
     width: 260px;
+
 }
 
 form div {
@@ -467,6 +479,20 @@ form input {
     border: solid 1px #808992;
 }
 
+.required-error, .email-error{
+    display:none;
+    color:red;
+    margin: 0px;
+}
+
+.required-error > span, .email-error > span {
+    flex-grow: 2;
+}
+
+div > input:invalid + .email-error {
+    display:block;
+}
+
 textarea {
     width:260px;
     height:116px;
@@ -475,8 +501,7 @@ textarea {
 }
 
 .send-form-btn {
-    background-image:linear-gradient(180deg, rgb(95,186,225), rgb(2,82,138));
-    
+    background-image:linear-gradient(180deg, rgb(95,186,225), rgb(2,82,138)); 
     width: 42px;
     height: 20px;
     font-size: 14px;
@@ -484,6 +509,7 @@ textarea {
     border: solid 1px rgb(218,218,218);
     border-bottom: solid 1px #5E8BAC;
     border-top-right-radius: 6px;
+    margin-bottom:10px;
 }
 
 .send-form-btn:hover {
@@ -496,7 +522,6 @@ textarea {
     color: white;
     text-decoration: none;
     padding: 3px;
-    
 }
 
 .send-form-btn a:hover {
@@ -523,7 +548,7 @@ textarea {
 }
 
 .more-in-paz {
-    margin: 24px;
+    margin: 0px 24px 0px 0px;
     height: 166px;
 }
 
