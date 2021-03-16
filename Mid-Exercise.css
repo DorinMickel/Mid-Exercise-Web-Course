@@ -58,7 +58,7 @@ button {
     width: 19px;
 }
 
-input {
+.search-input {
     border-top-right-radius: 5px;
     border: solid 1px #AAAAAA;
     width:130px;
@@ -67,7 +67,7 @@ input {
     font-size: 12px;
 }
 
-input::placeholder {
+.search-input::placeholder {
     color:black;
     padding:4px;
 }
@@ -78,7 +78,7 @@ nav {
 nav > ul {
     display: flex;
     margin-top:30px;
-    padding-right: 130px;      
+    padding-right: 127px;      
 }
 
 .header-menu > ul {
@@ -96,6 +96,7 @@ nav > ul {
     border-left: solid 2px #AAAAAA;
     padding: 0px 16px;
     width: 100%;
+    margin: 0px 1px;
 }
 
 .header-menu > ul > li {
@@ -145,7 +146,7 @@ nav > ul {
 
 .paz-logo {
     position: absolute;
-    top: 30px;
+    top: 32px;
     right:-8px;
 }
 
@@ -205,7 +206,7 @@ nav > ul {
     color:white;
 }
 
-.read-more a:hover, .footer-menu > a:hover, .more-detailes > a:hover , .country-regions > a:hover {
+.read-more a:hover, .more-detailes > a:hover , .country-regions > a:hover {
     color: #005CA0;     
 }
 
@@ -295,28 +296,241 @@ footer {
     background: linear-gradient(360deg, rgba(144,144,144,1) 60%, rgba(168,168,168,1) 100%);
 }
 
-.footer-menu {
-    list-style: none;
-    
-    font-size: 14px;
-    border-left: solid 2px white;
-    padding: 0px 6px;
-}
-
-.footer-menu > a {
-    color: white;
-    text-decoration: none;
-}
-
 footer > div {
     width : 900px;
+}
+
+.footer-menu {
+    list-style: none;
+    font-size: 14px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 footer ul {
     display: flex;
     justify-content: center;
     padding: 0px;
-    margin: 16px 0px 8px 0px;
-    height: 18px;
+    margin: 14px 0px 10px 0px;
+    height: 37px;
+}
+
+.footer-menu:last-child > div {
+    border: none;
+}
+
+.footer-menu > div {
+    border-left: solid 2px #fff;
+    padding: 0px 6px;
+    height: 14px;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+    color: #005CA0;
+}
+
+/* Contact  us page design */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main > div {
+    display:flex;
+    width: 900px;
+    padding-top: 32px;
+    margin: 0px;
+    justify-content: center;
+
+}
+
+.contact-us-btn {
+    width: 110px;
+    height: 36px;
+    margin-left: 23px;
+    border-radius: 0px;
+    border: 0px solid;
+    border-top: solid 1px #DEDEDE;
+    background-image: linear-gradient(180deg, rgba(254,254,254,1) 0%, rgba(229,229,229,1) 75%, rgba(204,204,204,1) 100%);
+    position:relative;
+}
+
+.material-icons {
+    position: absolute;
+    right: -10px;
+    top: 6px;
+    color: #005CA0;
+}
+
+.contact-us-btn > a {
+    color: #5C5C5C;
+    text-decoration: none;
+    margin-right: 13px
+}
+
+.contact-us-btn:hover > a {
+    color: #005CA0; 
+    text-decoration: underline;
+}
+
+.web-path {
+    font-size: 12px;
+    color: #5c5c5c;
+    display: block;
+    padding-bottom: 8px;
+}
+
+.web-path a {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+.web-path a:hover {
+    color: #005CA0;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.outer-headline-contact-us {
+    color: #6d6d6d;
+    padding-bottom: 3px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #CBCBCB;
+    width: 442px;
+
+}
+
+.inner-headline-contact-us {
+    color: #005CA0; 
+    margin: 0px 0px 5px 0px;
+}
+
+.form-container {
+    width: 385px;
+    height: 357px;
+    color: #6d6d6d;
+    background: linear-gradient(180deg, rgb(255,255,255), rgb(236,236,236));
+    border-top-right-radius: 20px;
+    border: 1px solid #CCCCCC;
+    border-bottom: 0px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 18px;
+    margin-top: 10px
+
+}
+
+.bold-explenation {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.normal-explenation {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+form {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 260px;
+}
+
+form div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+    
+}
+
+div label {
+    flex-grow: 2;
+}
+
+form input {
+    border-radius: 0px;
+    border: solid 1px #808992;
+}
+
+textarea {
+    width:260px;
+    height:116px;
+    border-radius: 0px;
+    border: solid 1px #808992;
+}
+
+.send-form-btn {
+    background-image:linear-gradient(180deg, rgb(95,186,225), rgb(2,82,138));
+    
+    width: 42px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    border: solid 1px rgb(218,218,218);
+    border-bottom: solid 1px #5E8BAC;
+    border-top-right-radius: 6px;
+}
+
+.send-form-btn:hover {
+    background-image:linear-gradient(180deg, rgb(253,233,32) , rgb(244,143,8) ); 
+    border: solid 1px rgb(218,218,218);
+
+}
+
+.send-form-btn a {
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    
+}
+
+.send-form-btn a:hover {
+    color:black;
+    background-color: #EEEEEE;
+}
+
+
+.contact-info, .more-in-paz {
+    width: 292px;
+    color: #6d6d6d;
+    background: linear-gradient(180deg, rgb(255,255,255), rgb(236,236,236));
+    border-top-right-radius: 20px;
+    border: 1px solid rgb(234,234,234);
+    border-top: 2px solid rgb(234,234,234);
+    border-bottom: 0px;
+    padding: 18px 22px 13px 22px;
+    font-size: 13px;
+}
+
+.contact-info {
+    margin: 56px 24px 26px 0px;
+    height:173px;
+}
+
+.more-in-paz {
+    margin: 24px;
+    height: 166px;
+}
+
+.more-in-paz a {
+    text-decoration: none;
+}
+
+.more-in-paz a:hover {
+    text-decoration: underline;
+    color: #005CA0; 
 }
 

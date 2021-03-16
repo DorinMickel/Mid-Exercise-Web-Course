@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>פז - צור קשר</title>
     <link rel="stylesheet" href="Mid-Exercise.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="search-the-web">
-                    <span><a href="#" class="change-to-english"><strong>English</strong></a></span>
-                    <input type="text" placeholder="רשום מילת חיפוש">
-                    <a href="#"><img class="magnifying-glass" src="search_button.png" alt="Magnifying Glass"></a>
-            </div>
+                <span><a href="#" class="change-to-english"><strong>English</strong></a></span>
+                <input type="text" placeholder="רשום מילת חיפוש" class="search-input">
+                <a href="#"><img class="magnifying-glass" src="search_button.png" alt="Magnifying Glass"></a>
+        </div>
 
             <nav>
                 <ul>
-                    <li class="header-menu"><div><a href="#"><img src="menu_home_blue.png" alt="Home"></a></div></li>
+                    <li class="header-menu"><div><a href="#"><img src="menu_home_grey.png" alt="Home"></a></div></li>
                     <li class="header-menu"><div><a href="#">אודות</a></div>
                         <ul>
                             <li><a href="#">אודות</a></li>
@@ -86,21 +88,94 @@
         </div> 
     </header>
 
+    <main>
+        <div>
+            <div>
+                <button class="contact-us-btn"><a href="contact-us.html"><span class="material-icons">
+                    arrow_left
+                    </span>צור קשר</a></button>
+            </div>
+            <div>
+                <span class="web-path"><a href="Mid-Exercise.html">עמוד הבית</a> > צור קשר</span>
+                <h3 class="outer-headline-contact-us">צור קשר</h3>
+                <div class="form-container">
+                    <h3 class="inner-headline-contact-us">צור קשר</h3>
+                    <div class="bold-explenation">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</div>
+                    <div class="normal-explenation">* השדות המסומנים בכוכבית (*) הינם שדות חובה</div>
+                    <form>
+                        <div>
+                            <label for="fName">* שם פרטי</label>
+                            <input id="fName" type="text">
+                        </div>
+                        <div>
+                            <label for="lName">* שם משפחה</label>
+                            <input id="lName" type="text">
+                        </div>
+                        <div>
+                            <label for="phoneNumber">* טלפון</label>
+                            <input id="phoneNumber" type="text">
+                        </div>
+                        <div>
+                            <label for="email">* E-mail</label>
+                            <input id="email" type="email">
+                        </div>
+                        <div>
+                            <textarea name="notes" id="free" cols="20" rows="3" placeholder="תוכן הפנייה"></textarea>
+                        </div>
+                        <div>
+                            <button class="send-form-btn" type="button"><a href="#">שלח</a></button>
+                        </div>
 
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="contact-info">
+                    <h3 class="inner-headline-contact-us">פרטי יצירת קשר</h3>
+                    <hr>
+                    <div>
+                        <strong>פז חברת נפט בע"מ</strong>
+                        <br>
+                        יורו פארק, בניין הולנד
+                        <br>
+                        קיבוץ יקום 60972
+                        <br>
+                        טל. שירות לקוחות 1-800-774-774
+                        <br>
+                        פקס.09-8641714
+                    </div>
+
+                </div>
+                <div class="more-in-paz">
+                    <h3 class="inner-headline-contact-us">עוד בפז</h3>
+                    <hr>
+                    <div>
+                        ליצירת קשר עם דוברות פז
+                        <br>
+                        <a href="#">לחצו כאן>> </a>
+                        <br>
+                        רוצים לעבוד בפז?
+                        <br>
+                        <a href="#">לחצו כאן>> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div>
             <ul>
-                <li class="footer-menu"><a href="#"><img src="fb_icon.png" alt="Facebook icon"></a></li>
-                <li class="footer-menu"><a href="#">עמוד הבית</a></li>
-                <li class="footer-menu"><a href="#">מחירונים</a></li>
-                <li class="footer-menu"><a href="#">קריירה</a></li>
-                <li class="footer-menu"><a href="#">תנאי שימוש</a></li>
-                <li class="footer-menu"><a href="#">נגישות</a></li>
-                <li class="footer-menu"><a href="#">מפת אתר</a></li>
-                <li class="footer-menu"><a href="contact-us.html">צור קשר</a></li>
-                <li class="footer-menu"><a href="#">שטחי מסחר</a></li>
-                <li class="footer-menu"><a href="#">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
+                <li class="footer-menu"><div><a href="#"><img src="fb_icon.png" alt="Facebook icon"></a></div></li>
+                <li class="footer-menu"><div><a href="#">עמוד הבית</a></div></li>
+                <li class="footer-menu"><div><a href="#">מחירונים</a></div></li>
+                <li class="footer-menu"><div><a href="#">קריירה</a></div></li>
+                <li class="footer-menu"><div><a href="#">תנאי שימוש</a></div></li>
+                <li class="footer-menu"><div><a href="#">נגישות</a></div></li>
+                <li class="footer-menu"><div><a href="#">מפת אתר</a></div></li>
+                <li class="footer-menu"><div><a href="contact-us.html">צור קשר</a></div></li>
+                <li class="footer-menu"><div><a href="#">שטחי מסחר</a></div></li>
+                <li class="footer-menu"><div><a href="#">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></div></li>
             </ul>
 
         </div>
