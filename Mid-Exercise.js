@@ -23,7 +23,7 @@ function submitContactUs() {
 }
 
 
-var changeImage = setInterval(changeImage,8000);
+var changeImage = setInterval(changeImage,5000);
 
 function changeImage() {
     var image = document.getElementById('changingImage').src;
@@ -39,7 +39,7 @@ function changeImage() {
     }
 }
 
-var changeHeadline = setInterval(changeHeadline,8000);
+var changeHeadline = setInterval(changeHeadline,5000);
 
 function changeHeadline() {
     var headline = document.getElementById('changingHeadline').innerHTML;
