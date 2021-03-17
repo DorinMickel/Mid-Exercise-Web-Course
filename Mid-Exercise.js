@@ -23,19 +23,19 @@ function submitContactUs() {
 }
 
 
-var changeImage = setInterval(changeImage,5000);
+var changeImage = setInterval(changeImage,8000);
 
 function changeImage() {
     var image = document.getElementById('changingImage').src;
 
     if (image == "http://127.0.0.1:5501/paz_250x110103131473.jpg") {
-    document.getElementById('changingImage').src = "250X110668568400.jpg";
+    document.getElementById('changingImage').src = "http://127.0.0.1:5501/250X110668568400.jpg";
 
     } else if (image == "http://127.0.0.1:5501/250X110668568400.jpg") {
-        document.getElementById('changingImage').src = "250X110571325734.jpg";
+        document.getElementById('changingImage').src = "http://127.0.0.1:5501/250X110571325734.jpg";
 
     } else {
-        document.getElementById('changingImage').src = "paz_250x110103131473.jpg";
+        document.getElementById('changingImage').src = "http://127.0.0.1:5501/paz_250x110103131473.jpg";
     }
 }
 
