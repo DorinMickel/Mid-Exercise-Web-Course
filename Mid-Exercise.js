@@ -29,14 +29,14 @@ function changeImage() {
     var image = document.getElementById('changingImage').src;
     console.log(image)
 
-    // if (image == "http://127.0.0.1:5501/paz_250x110103131473.jpg") {
-    // document.getElementById('changingImage').src = "http://127.0.0.1:5501/250X110668568400.jpg";
+    // if (image == "https://dorinmickel.github.io/Mid-Exercise-Web-Course/paz_250x110103131473.jpg") {
+    // document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110668568400.jpg";
 
-    // } else if (image == "http://127.0.0.1:5501/250X110668568400.jpg") {
-    //     document.getElementById('changingImage').src = "http://127.0.0.1:5501/250X110571325734.jpg";
+    // } else if (image == "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110668568400.jpg") {
+    //     document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110571325734.jpg";
 
     // } else {
-    //     document.getElementById('changingImage').src = "http://127.0.0.1:5501/paz_250x110103131473.jpg";
+    //     document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/paz_250x110103131473.jpg";
     // }
 }
 
