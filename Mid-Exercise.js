@@ -27,17 +27,16 @@ var changeImage = setInterval(changeImage,5000);
 
 function changeImage() {
     var image = document.getElementById('changingImage').src;
-    console.log(image)
 
-    // if (image == "https://dorinmickel.github.io/Mid-Exercise-Web-Course/paz_250x110103131473.jpg") {
-    // document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110668568400.jpg";
+    if (image == "https://dorinmickel.github.io/Mid-Exercise-Web-Course/paz_250x110103131473.jpg") {
+    document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110668568400.jpg";
 
-    // } else if (image == "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110668568400.jpg") {
-    //     document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110571325734.jpg";
+    } else if (image == "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110668568400.jpg") {
+        document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/250X110571325734.jpg";
 
-    // } else {
-    //     document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/paz_250x110103131473.jpg";
-    // }
+    } else {
+        document.getElementById('changingImage').src = "https://dorinmickel.github.io/Mid-Exercise-Web-Course/paz_250x110103131473.jpg";
+    }
 }
 
 var changeHeadline = setInterval(changeHeadline,5000);
